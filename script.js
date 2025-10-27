@@ -1,12 +1,10 @@
 
-       document.getElementById('current-year').textContent = new Date().getFullYear();
+  const toggleButton = document.getElementById('toggle-button');
+  const navLinks = document.querySelector('.nav-links');
 
-       // Example for mobile navigation toggle (requires CSS and more JS logic)
-       const toggleButton = document.querySelector('.toggle-button');
-       const navLinks = document.querySelector('.nav-links');
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    toggleButton.classList.toggle('active'); // rotates icon
+  });
 
-       toggleButton.addEventListener('click', () => {
-           navLinks.classList.toggle('active');
-           const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
-           toggleButton.setAttribute('aria-expanded', !isExpanded);
-       });
+  document.getElementById('current-year').textContent = new Date().getFullYear();
