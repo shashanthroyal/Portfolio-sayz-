@@ -597,6 +597,17 @@ section:last-of-type {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+ 
+}
+
+.contact-info p span {
+    font-weight: 500;
+    margin-left: 0.3rem;
+}
+
+.contact-info .p{
+
+    margin-top: 60px;
 }
 
 .contact-info p i {
@@ -773,6 +784,12 @@ section:last-of-type {
     .contact-info p {
         font-size: 1rem;
     }
+
+    .contact-info p span{
+
+        display: none;
+    }
+    
 
     .social-contact-icons img {
         width: 45px;
